@@ -16,8 +16,8 @@ export default function HomePage() {
           <Button size="lg" asChild>
             <Link href="/projects">View My Work</Link>
           </Button>
-          <Button size="lg" variant="outline">
-            Download Resume
+          <Button size="lg" variant="outline" asChild>
+            <a href="/resume.pdf" download>Download Resume</a>
           </Button>
         </div>
       </div>
