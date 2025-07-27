@@ -1,7 +1,6 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import { motion } from "framer-motion";
 
 export default function HomePage() {
@@ -30,7 +29,7 @@ export default function HomePage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          I'm a hands-on engineering leader who excels at architecting solutions
+          I&apos;m a hands-on engineering leader who excels at architecting solutions
           for complex cloud challenges. I have a proven track record of
           organizing and directing cross-functional teams to modernize
           mission-critical applications, aligning technology roadmaps with
