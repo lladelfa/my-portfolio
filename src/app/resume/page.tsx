@@ -49,11 +49,13 @@ export default function ResumePage() {
                       <p className="text-sm text-muted-foreground">{job.dates}</p>
                     </div>
                     <p className="text-lg text-muted-foreground">{job.company}</p>
-                    <ul className="mt-2 list-disc space-y-1 pl-4">
-                      {job.description.map((point, i) => (
-                        <li key={`${job.company}-desc-${i}`}>{point}</li>
-                      ))}
-                    </ul>
+                    {job.description.length > 0 && (
+                      <ul className="mt-2 list-disc space-y-1 pl-4">
+                        {job.description.map((point, i) => (
+                          <li key={`${job.company}-desc-${i}`}>{point}</li>
+                        ))}
+                      </ul>
+                    )}
                   </div>
                 ))}
               </div>
@@ -84,9 +86,9 @@ export default function ResumePage() {
                   <div key={edu.institution}>
                     <div className="flex justify-between items-baseline">
                       <h3 className="text-xl font-semibold">{edu.degree}</h3>
-                      <p className="text-sm text-muted-foreground">
-                        {edu.dates}
-                      </p>
+                      {edu.dates && (
+                        <p className="text-sm text-muted-foreground">{edu.dates}</p>
+                      )}
                     </div>
                     <p className="text-lg text-muted-foreground">{edu.institution}</p>
                   </div>

@@ -30,6 +30,7 @@ export function MainNav() {
             <Button variant="ghost" size="icon" asChild>
               <Link href="https://github.com/lladelfa" target="_blank">
                 <Github className="h-4 w-4" />
+                <span className="sr-only">GitHub</span>
               </Link>
             </Button>
             <Button variant="ghost" size="icon" asChild>
@@ -38,6 +39,7 @@ export function MainNav() {
                 target="_blank"
               >
                 <Linkedin className="h-4 w-4" />
+                <span className="sr-only">LinkedIn</span>
               </Link>
             </Button>
             <ModeToggle />
@@ -53,13 +55,13 @@ export function MainNav() {
               <SheetContent side="right">
                 <nav className="mt-8 grid gap-6 text-lg font-medium">
                   <SheetClose asChild>
+                    <Link href="/projects">Projects</Link>
+                  </SheetClose>
+                  <SheetClose asChild>
                     <Link href="/resume">Resume</Link>
                   </SheetClose>
                   <SheetClose asChild>
                     <Link href="/contact">Contact</Link>
-                  </SheetClose>
-                  <SheetClose asChild>
-                    <Link href="/projects">Projects</Link>
                   </SheetClose>
                   <Separator />
                   <div className="flex items-center justify-center gap-4">
@@ -69,6 +71,7 @@ export function MainNav() {
                         target="_blank"
                       >
                         <Github className="h-5 w-5" />
+                        <span className="sr-only">GitHub</span>
                       </Link>
                     </Button>
                     <Button variant="ghost" size="icon" asChild>
@@ -77,6 +80,7 @@ export function MainNav() {
                         target="_blank"
                       >
                         <Linkedin className="h-5 w-5" />
+                        <span className="sr-only">LinkedIn</span>
                       </Link>
                     </Button>
                     <ModeToggle />

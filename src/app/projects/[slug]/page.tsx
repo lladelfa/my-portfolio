@@ -5,23 +5,18 @@ import type { Metadata } from "next";
 import { ArrowLeft } from "lucide-react";
 import { notFound } from "next/navigation";
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   return caseStudies.map((study) => ({
     slug: study.slug,
   }));
 }
 
-type CaseStudyPageProps = {
-  params: {
-    slug: string;
-  };
-  searchParams: { [key:string]: string | string[] | undefined };
-};
-
 export async function generateMetadata({
   params,
-}: CaseStudyPageProps): Promise<Metadata> {
-  const { slug } = params;
+}: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
   const study = caseStudies.find((s) => s.slug === slug);
 
   if (!study) {
@@ -36,8 +31,10 @@ export async function generateMetadata({
   };
 }
 
-export default function CaseStudyPage({ params }: CaseStudyPageProps) {
-  const { slug } = params;
+export default async function CaseStudyPage({
+  params,
+}: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
   const study = caseStudies.find((s) => s.slug === slug);
 
   if (!study) {
