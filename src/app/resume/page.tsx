@@ -36,7 +36,7 @@ export default function ResumePage() {
             <AccordionContent>
               <div className="space-y-8">
                 {resumeData.experience.map((job) => (
-                  <div key={job.company}>
+                  <div key={`${job.company}-${job.role}`}>
                     <div className="flex justify-between items-baseline">
                       <h3 className="text-xl font-semibold">{job.role}</h3>
                       <p className="text-sm text-muted-foreground">{job.dates}</p>

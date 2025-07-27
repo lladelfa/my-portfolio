@@ -28,7 +28,7 @@ export default function ContactPage() {
           Get In Touch
         </h1>
         <p className="mx-auto mt-4 max-w-[700px] text-muted-foreground md:text-xl">
-          I'm always open to discussing new projects, creative ideas, or
+          I&apos;m always open to discussing new projects, creative ideas, or
           opportunities to be part of an amazing team.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">

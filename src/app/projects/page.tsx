@@ -38,8 +38,8 @@ export default function ProjectsPage() {
           My Work & Case Studies
         </h1>
         <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-          Here are some of the projects I've worked on. Since most of my work
-          is proprietary, I've created case studies to showcase my process and
+          Here are some of the projects I&apos;ve worked on. Since most of my work
+          is proprietary, I&apos;ve created case studies to showcase my process and
           impact.
         </p>
       </div>
