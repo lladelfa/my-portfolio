@@ -5,17 +5,17 @@ import Link from "next/link";
 const socialLinks = [
   {
     name: "Email",
-    href: "mailto:lorenzo.ladelfa@example.com", // Replace with your actual email
+    href: "mailto:lladelfa@gmail.com",
     icon: Mail,
   },
   {
     name: "GitHub",
-    href: "https://github.com/lorenzoladelfa",
+    href: "https://github.com/lladelfa",
     icon: Github,
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/in/lorenzoladelfa",
+    href: "https://www.linkedin.com/in/lorenzo-ladelfa/",
     icon: Linkedin,
   },
 ];

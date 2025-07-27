@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Card,
   CardContent,
@@ -8,6 +10,25 @@ import {
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { caseStudies } from "@/lib/data";
+import { motion } from "framer-motion";
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};
 
 export default function ProjectsPage() {
   return (
@@ -23,27 +44,34 @@ export default function ProjectsPage() {
         </p>
       </div>
 
-      <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <motion.div
+        className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
         {caseStudies.map((study) => (
-          <Link href={study.href} key={study.title} className="group block">
-            <Card className="h-full transition-all group-hover:shadow-lg group-hover:-translate-y-1">
-              <CardHeader>
-                <CardTitle>{study.title}</CardTitle>
-                <CardDescription>{study.description}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2">
-                  {study.tags.map((tag) => (
-                    <Badge key={tag} variant="secondary">
-                      {tag}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          </Link>
+          <motion.div key={study.title} variants={itemVariants}>
+            <Link href={study.href} className="group block h-full">
+              <Card className="h-full transition-all group-hover:shadow-lg group-hover:-translate-y-1">
+                <CardHeader>
+                  <CardTitle>{study.title}</CardTitle>
+                  <CardDescription>{study.description}</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2">
+                    {study.tags.map((tag) => (
+                      <Badge key={tag} variant="secondary">
+                        {tag}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </main>
   );
 }
