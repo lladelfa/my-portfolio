@@ -42,9 +42,6 @@ export default function HomePage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <Button size="lg" asChild>
-            <Link href="/projects">View My Work</Link>
-          </Button>
           <Button size="lg" variant="outline" asChild>
             <a href="/resume.pdf" download>Download Resume</a>
           </Button>

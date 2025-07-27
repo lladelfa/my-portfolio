@@ -1,24 +1,30 @@
 import Link from "next/link";
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin, Menu } from "lucide-react";
 
 import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "@/components/ui/button";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 export function MainNav() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 items-center">
-        <div className="mr-4 hidden md:flex">
+        <div className="mr-4 flex items-center">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <span className="hidden font-bold sm:inline-block">Lorenzo LaDelfa</span>
+            <span className="font-bold">Lorenzo LaDelfa</span>
           </Link>
-          <nav className="flex items-center space-x-6 text-sm font-medium">
-            <Link href="/projects">Projects</Link>
+          <nav className="hidden items-center space-x-6 text-sm font-medium md:flex">
+            {/* <Link href="/projects">Projects</Link> */}
             <Link href="/resume">Resume</Link>
             <Link href="/contact">Contact</Link>
           </nav>
         </div>
-        <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
+        <div className="flex flex-1 items-center justify-end space-x-2">
           <nav className="flex items-center">
             <Button variant="ghost" size="icon" asChild>
               <Link href="https://github.com/lladelfa" target="_blank">
@@ -26,12 +32,36 @@ export function MainNav() {
               </Link>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <Link href="https://www.linkedin.com/in/lorenzo-ladelfa/" target="_blank">
+              <Link
+                href="https://www.linkedin.com/in/lorenzo-ladelfa/"
+                target="_blank"
+              >
                 <Linkedin className="h-4 w-4" />
               </Link>
             </Button>
             <ModeToggle />
           </nav>
+          <div className="md:hidden">
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <Menu className="h-5 w-5" />
+                  <span className="sr-only">Toggle Menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right">
+                <nav className="mt-8 grid gap-6 text-lg font-medium">
+                  <SheetClose asChild>
+                    <Link href="/resume">Resume</Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link href="/contact">Contact</Link>
+                  </SheetClose>
+                  {/* <SheetClose asChild><Link href="/projects">Projects</Link></SheetClose> */}
+                </nav>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </div>
     </header>
