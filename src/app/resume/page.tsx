@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 import {
@@ -8,6 +9,12 @@ import {
 } from "@/components/ui/accordion";
 import { resumeData } from "@/lib/data";
 import { Badge } from "@/components/ui/badge";
+
+export const metadata: Metadata = {
+  title: "Resume | Lorenzo LaDelfa",
+  description:
+    "A comprehensive overview of my skills, experience, and education as a strategic engineering leader and solutions architect.",
+};
 
 export default function ResumePage() {
   return (
