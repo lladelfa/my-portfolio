@@ -10,12 +10,12 @@ export function Footer() {
           </p>
         </div>
         <nav className="flex items-center gap-4 sm:gap-6">
-          {/* <Link
+          <Link
             href="/projects"
             className="text-sm font-medium text-muted-foreground hover:underline underline-offset-4"
           >
             Projects
-          </Link> */}
+          </Link>
           <Link
             href="/resume"
             className="text-sm font-medium text-muted-foreground hover:underline underline-offset-4"

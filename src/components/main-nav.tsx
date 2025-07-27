@@ -20,7 +20,7 @@ export function MainNav() {
             <span className="font-bold">Lorenzo LaDelfa</span>
           </Link>
           <nav className="hidden items-center space-x-6 text-sm font-medium md:flex">
-            {/* <Link href="/projects">Projects</Link> */}
+            <Link href="/projects">Projects</Link>
             <Link href="/resume">Resume</Link>
             <Link href="/contact">Contact</Link>
           </nav>
@@ -58,7 +58,9 @@ export function MainNav() {
                   <SheetClose asChild>
                     <Link href="/contact">Contact</Link>
                   </SheetClose>
-                  {/* <SheetClose asChild><Link href="/projects">Projects</Link></SheetClose> */}
+                  <SheetClose asChild>
+                    <Link href="/projects">Projects</Link>
+                  </SheetClose>
                   <Separator />
                   <div className="flex items-center justify-center gap-4">
                     <Button variant="ghost" size="icon" asChild>
