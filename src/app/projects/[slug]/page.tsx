@@ -19,8 +19,9 @@ type CaseStudyPageProps = {
 };
 
 export async function generateMetadata({
-  params: { slug },
+  params,
 }: CaseStudyPageProps): Promise<Metadata> {
+  const { slug } = params;
   const study = caseStudies.find((s) => s.slug === slug);
 
   if (!study) {
@@ -35,7 +36,8 @@ export async function generateMetadata({
   };
 }
 
-export default function CaseStudyPage({ params: { slug } }: CaseStudyPageProps) {
+export default function CaseStudyPage({ params }: CaseStudyPageProps) {
+  const { slug } = params;
   const study = caseStudies.find((s) => s.slug === slug);
 
   if (!study) {
