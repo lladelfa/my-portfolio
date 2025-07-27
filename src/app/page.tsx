@@ -6,7 +6,7 @@ export default function HomePage() {
     <main className="flex flex-col items-center justify-center flex-1 p-8 text-center">
       <div className="max-w-2xl">
         <h1 className="text-4xl font-bold tracking-tight md:text-6xl">
-          Your Name
+          Lorenzo LaDelfa
         </h1>
         <p className="mt-4 text-lg text-muted-foreground md:text-xl">
           A Senior Software Engineer building scalable and user-friendly

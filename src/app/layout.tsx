@@ -3,12 +3,13 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { MainNav } from "@/components/main-nav";
+import { Footer } from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Your Name - Portfolio",
-  description: "The professional portfolio of Your Name.",
+  title: "Lorenzo LaDelfa - Portfolio",
+  description: "The professional portfolio of Lorenzo LaDelfa.",
 };
 
 export default function RootLayout({
@@ -28,6 +29,7 @@ export default function RootLayout({
           <div className="flex min-h-screen flex-col">
             <MainNav />
             <div className="flex-1">{children}</div>
+            <Footer />
           </div>
         </ThemeProvider>
       </body>
