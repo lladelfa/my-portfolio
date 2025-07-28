@@ -1,42 +1,26 @@
 export const caseStudies = [
   {
-    slug: "loyalty-management-platform",
-    title: "Loyalty Management Platform & Security Enhancement",
-    description:
-      "Led the design of a real-time benefits management platform and implemented a security fix that eliminated $300k in monthly fraud.",
-    tags: ["AWS", "Python", "NodeJS", "Java", "Microservices", "API Integration", "DevOps"],
-    href: "/projects/loyalty-management-platform",
-    role: "Director, Software Engineering",
-    timeline: "1 Year",
-    problem:
-      "The business needed real-time control over customer benefits, and a critical loyalty program was losing $300,000 monthly to fraudulent activity.",
-    solution:
-      "I orchestrated 6 engineering teams to design and implement the Loyalty Management Platform, providing enterprise-scale, real-time benefit management. I also drove the implementation of a customer-facing security enhancement for the miles transfer program.",
-    outcome:
-      "The security enhancement virtually eliminated the fraudulent activity. The new platform provided the business with critical flexibility and future-proofed our servicing solutions.",
-  },
-  {
     slug: "investor-relations-application",
     title: "IROD: Investor Relations Application",
     description:
       "Crafted a custom, award-winning web/mobile app to automate quarterly earnings, which was later strategically decommissioned to simplify the ecosystem.",
-    tags: ["React", "D3.js", "Snowflake", "JumpStart Framework"],
+    tags: ["React", "D3.js", "Snowflake", "JumpStart Framework", "AWS", "Python","Docker"],
     href: "/projects/investor-relations-application",
     role: "Senior Manager, Software Engineering",
-    timeline: "Ongoing",
+    timeline: "1 Year",
     problem:
       "The quarterly earnings process for the CFO and investor relations was manual and inefficient. An existing UI also needed to be replaced with a modern, internally-sourced solution.",
     solution:
-      "I led the team that built a custom web and mobile application (IROD) to automate the process. We later evolved the application to use a modern UI sourced from internal APIs and the OneLake, leveraging our reusable JumpStart framework.",
+      "I led the team that built a custom web and mobile application (IROD) to automate the process. We later evolved the application to use a modern UI sourced from internal APIs and the data lake, leveraging our reusable JumpStart framework.",
     outcome:
-      "The initial application earned the prestigious Circle of Excellence award. The IROD application was later PAR certified and won another COE before being strategically decommissioned to simplify the portfolio and increase team capacity for higher-priority objectives.",
+      "Our CEO, CFO and Investor Relations team used it to improve the quarterly investor relations earning call.  Improving access to information and communication across the parties involved.  The application earned the prestigious Circle of Excellence award.",
   },
   {
     slug: "cloud-migration-finance-platforms",
     title: "Cloud Migration of Finance Platforms",
     description:
       "Led the migration of mission-critical finance platforms to AWS, including the general ledger, and modernized monolithic applications to a microservices architecture.",
-    tags: ["AWS", "Microservices", "Python", "Java", "Docker", "CICD"],
+    tags: ["AWS", "Microservices", "Python", "Java", "Docker", "CICD", "API", "SQL"],
     href: "/projects/cloud-migration-finance-platforms",
     role: "Manager, Software Engineering",
     timeline: "Multi-Year",
@@ -45,23 +29,7 @@ export const caseStudies = [
     solution:
       "I coordinated multiple cloud migration teams, architected technical build components on AWS, and led the modernization of monolithic applications to a microservices-based API architecture. This included migrating over 1,000 interfaces and associated data.",
     outcome:
-      "The initiative ensured a smooth transition of critical finance platforms to the cloud, accelerated the adoption of AWS best practices, and achieved seamless cloud compliance.",
-  },
-  {
-    slug: "finsight-application-optimization",
-    title: "FinSight Application Optimization",
-    description:
-      "Devised an architectural optimization plan projected to save $2.8M annually and achieve a 164% ROI by simplifying a complex financial application.",
-    tags: ["Cloud Architecture", "DevOps", "Data Architecture", "Python", "AWS"],
-    href: "/projects/finsight-application-optimization",
-    role: "Director, Software Engineering",
-    timeline: "Ongoing",
-    problem:
-      "The FinSight application's architecture was overly complex, requiring a large team of 15 engineers to support it, leading to high operational costs.",
-    solution:
-      "I partnered with senior engineers to design a simplified, domain-driven architecture for the application. I successfully communicated this detailed plan and garnered buy-in from product and business partners.",
-    outcome:
-      "The optimization plan is projected to reduce the required engineering support from 15 to 5, deliver over $2.8 million in annual savings, and achieve a 164% ROI within one year.",
+      "The initiative ensured a smooth transition of critical finance platforms to the cloud allowing us to exit out datacenter, accelerated the adoption of AWS best practices, and achieved seamless cloud compliance.",
   },
   {
     slug: "rapid-liquidity-dashboard",
@@ -78,6 +46,29 @@ export const caseStudies = [
       "I rapidly formed and led a task force of engineers, providing technical guidance and leveraging the reusable JumpStart framework to quickly produce the liquidity dashboard.",
     outcome:
       "The team delivered the first feature to production within one week, demonstrating strong leadership and technical execution under pressure. The patterns developed were reused in future projects.",
+  },
+  {
+    slug: "personal-portfolio-platform",
+    title: "Personal Portfolio & Blog Platform",
+    description:
+      "A dynamic, responsive portfolio built from the ground up with Next.js, TypeScript, and Tailwind CSS, and deployed on Vercel.",
+    tags: [
+      "Next.js",
+      "Vercel",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "CI/CD",
+    ],
+    href: "/projects/personal-portfolio-platform",
+    role: "Full-Stack Developer & DevOps",
+    timeline: "Ongoing",
+    problem:
+      "The initial challenge was to create a modern, performant, and easily maintainable personal portfolio from scratch. The project required a robust technical stack that could handle dynamic content, ensure excellent SEO, and support a professional CI/CD workflow for seamless deployments.",
+    solution:
+      "We chose Next.js with the App Router, TypeScript, and Tailwind CSS for a strong foundation. The development process was iterative, focusing on building out core pages (Home, Resume, Projects), implementing a responsive navigation system with light/dark mode, and establishing a main/develop branching strategy for Vercel deployments. A key part of the process involved debugging and resolving complex, version-specific issues with Next.js 15.",
+    outcome:
+      "The result is a fully-featured, statically-generated portfolio site deployed on Vercel. It features a dynamic case study system, a polished and responsive UI, and a professional deployment pipeline. This project itself serves as a testament to modern web development practices.",
   },
 ];
 
