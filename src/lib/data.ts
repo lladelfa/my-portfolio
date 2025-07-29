@@ -1,5 +1,28 @@
 export const caseStudies = [
   {
+    slug: "personal-portfolio-platform",
+    title: "Personal Portfolio & Blog Platform",
+    description:
+      "A dynamic, responsive portfolio built from the ground up with Next.js, TypeScript, and Tailwind CSS, and deployed on Vercel.",
+    tags: [
+      "Next.js",
+      "Vercel",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "CI/CD",
+    ],
+    href: "/projects/personal-portfolio-platform",
+    role: "Full-Stack Developer & DevOps",
+    timeline: "Ongoing",
+    problem:
+      "The initial challenge was to create a modern, performant, and easily maintainable personal portfolio from scratch. The project required a robust technical stack that could handle dynamic content, ensure excellent SEO, and support a professional CI/CD workflow for seamless deployments.",
+    solution:
+      "We chose Next.js with the App Router, TypeScript, and Tailwind CSS for a strong foundation. The development process was iterative, focusing on building out core pages (Home, Resume, Projects), implementing a responsive navigation system with light/dark mode, and establishing a main/develop branching strategy for Vercel deployments. A key part of the process involved debugging and resolving complex, version-specific issues with Next.js 15.",
+    outcome:
+      "The result is a fully-featured, statically-generated portfolio site deployed on Vercel. It features a dynamic case study system, a polished and responsive UI, and a professional deployment pipeline. This project itself serves as a testament to modern web development practices.",
+  },
+  {
     slug: "investor-relations-application",
     title: "IROD: Investor Relations Application",
     description:
@@ -46,29 +69,6 @@ export const caseStudies = [
       "I rapidly formed and led a task force of engineers, providing technical guidance and leveraging the reusable JumpStart framework to quickly produce the liquidity dashboard.",
     outcome:
       "The team delivered the first feature to production within one week, demonstrating strong leadership and technical execution under pressure. The patterns developed were reused in future projects.",
-  },
-  {
-    slug: "personal-portfolio-platform",
-    title: "Personal Portfolio & Blog Platform",
-    description:
-      "A dynamic, responsive portfolio built from the ground up with Next.js, TypeScript, and Tailwind CSS, and deployed on Vercel.",
-    tags: [
-      "Next.js",
-      "Vercel",
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "CI/CD",
-    ],
-    href: "/projects/personal-portfolio-platform",
-    role: "Full-Stack Developer & DevOps",
-    timeline: "Ongoing",
-    problem:
-      "The initial challenge was to create a modern, performant, and easily maintainable personal portfolio from scratch. The project required a robust technical stack that could handle dynamic content, ensure excellent SEO, and support a professional CI/CD workflow for seamless deployments.",
-    solution:
-      "We chose Next.js with the App Router, TypeScript, and Tailwind CSS for a strong foundation. The development process was iterative, focusing on building out core pages (Home, Resume, Projects), implementing a responsive navigation system with light/dark mode, and establishing a main/develop branching strategy for Vercel deployments. A key part of the process involved debugging and resolving complex, version-specific issues with Next.js 15.",
-    outcome:
-      "The result is a fully-featured, statically-generated portfolio site deployed on Vercel. It features a dynamic case study system, a polished and responsive UI, and a professional deployment pipeline. This project itself serves as a testament to modern web development practices.",
   },
 ];
 
@@ -145,6 +145,11 @@ export const resumeData = {
       dates: "",
     },
     {
+      institution: "University of Virginia Darden School of Business",
+      degree: "Technology Leadership Development Program",
+      dates: "",
+    },
+    {
       institution: "AWS",
       degree: "AWS Certified Solutions Architect - Associate",
       dates: "",
@@ -152,11 +157,6 @@ export const resumeData = {
     {
       institution: "Capital One Tech College",
       degree: "CSSE",
-      dates: "",
-    },
-    {
-      institution: "University of Virginia Darden School of Business",
-      degree: "Technology Leadership Development Program",
       dates: "",
     },
   ],
