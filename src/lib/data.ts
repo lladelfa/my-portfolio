@@ -23,6 +23,22 @@ export const caseStudies = [
       "The result is a fully-featured, statically-generated portfolio site deployed on Vercel. It features a dynamic case study system, a polished and responsive UI, and a professional deployment pipeline. This project itself serves as a testament to modern web development practices.",
   },
   {
+    slug: "loyalty-management-platform",
+    title: "Loyalty Management Platform & Security Enhancement",
+    description:
+      "Led the design of a real-time benefits management platform and implemented a security fix that eliminated $300k in monthly fraud.",
+    tags: ["AWS", "Java", "Microservices", "API Integration", "DevOps"],
+    href: "/projects/loyalty-management-platform",
+    role: "Director, Software Engineering",
+    timeline: "1 Year",
+    problem:
+      "The business needed real-time control over customer benefits.",
+    solution:
+      "I orchestrated 6 engineering teams to design and implement the Loyalty Management Platform, providing enterprise-scale, real-time benefit management.",
+    outcome:
+      "The new platform provided the business with critical flexibility and future-proofed our servicing solutions.",
+  },
+  {
     slug: "investor-relations-application",
     title: "IROD: Investor Relations Application",
     description:
@@ -39,22 +55,6 @@ export const caseStudies = [
       "Our CEO, CFO and Investor Relations team used it to improve the quarterly investor relations earning call.  Improving access to information and communication across the parties involved.  The application earned the prestigious Circle of Excellence award.",
   },
   {
-    slug: "cloud-migration-finance-platforms",
-    title: "Cloud Migration of Finance Platforms",
-    description:
-      "Led the migration of mission-critical finance platforms to AWS, including the general ledger, and modernized monolithic applications to a microservices architecture.",
-    tags: ["AWS", "Microservices", "Python", "Java", "Docker", "CICD", "API", "SQL"],
-    href: "/projects/cloud-migration-finance-platforms",
-    role: "Manager, Software Engineering",
-    timeline: "Multi-Year",
-    problem:
-      "Critical finance platforms, including the general ledger and enterprise reconciliation, were running on-premise. Monolithic applications were inefficient and not cloud-compliant.",
-    solution:
-      "I coordinated multiple cloud migration teams, architected technical build components on AWS, and led the modernization of monolithic applications to a microservices-based API architecture. This included migrating over 1,000 interfaces and associated data.",
-    outcome:
-      "The initiative ensured a smooth transition of critical finance platforms to the cloud allowing us to exit out datacenter, accelerated the adoption of AWS best practices, and achieved seamless cloud compliance.",
-  },
-  {
     slug: "rapid-liquidity-dashboard",
     title: "Rapid Liquidity Dashboard Development",
     description:
@@ -69,6 +69,22 @@ export const caseStudies = [
       "I rapidly formed and led a task force of engineers, providing technical guidance and leveraging the reusable JumpStart framework to quickly produce the liquidity dashboard.",
     outcome:
       "The team delivered the first feature to production within one week, demonstrating strong leadership and technical execution under pressure. The patterns developed were reused in future projects.",
+  },
+  {
+    slug: "cloud-migration-finance-platforms",
+    title: "Cloud Migration of Finance Platforms",
+    description:
+      "Led the migration of mission-critical finance platforms to AWS, including the general ledger, and modernized monolithic applications to a microservices architecture.",
+    tags: ["AWS", "Microservices", "Python", "Java", "Docker", "CICD", "API", "SQL"],
+    href: "/projects/cloud-migration-finance-platforms",
+    role: "Manager, Software Engineering",
+    timeline: "Multi-Year",
+    problem:
+      "Critical finance platforms, including the general ledger and enterprise reconciliation, were running on-premise. Monolithic applications were inefficient and not cloud-compliant.",
+    solution:
+      "I coordinated multiple cloud migration teams, architected technical build components on AWS, and led the modernization of monolithic applications to a microservices-based API architecture. This included migrating over 1,000 interfaces and associated data.",
+    outcome:
+      "The initiative ensured a smooth transition of critical finance platforms to the cloud allowing us to exit out datacenter, accelerated the adoption of AWS best practices, and achieved seamless cloud compliance.",
   },
 ];
 
@@ -123,19 +139,32 @@ export const resumeData = {
       company: "Capital One",
       role: "Principal Associate, Software Engineering",
       dates: "July 2011 – August 2013",
-      description: [],
+      description: [
+        "Led the technical delivery of the Recon engineering team, successfully completing major finance initiatives including SSO migration, IE11 upgrade, and resiliency improvements.",
+        "Implemented data enrichment on the Reconciliation system, automating reclassifications to reduce risk and eliminate a manual task, resulting in significant time savings for the business.",
+      ],
     },
     {
       company: "Sodexo",
       role: "Business Technology Specialist",
       dates: "April 2006 – June 2011",
-      description: [],
+      description: [
+        "Contributed as an integral member of a team to develop processes for an accurate and automated payroll reconciliation.",
+        "Implemented a sub-account banking structure that improved automated reconciliation and enhanced the accuracy of bank and GL data.",
+        "Completed an in-house upgrade of ReconPlus, optimizing the reconciliation system.",
+        "Developed a custom ACH application to analyze daily ACH transfers and transmit files in standard NACHA format, resulting in a 75% reduction in bank fees.",
+        "Created a custom program to automatically retrieve bank balances and data files, retiring a manual process.",
+      ],
     },
     {
       company: "Citigroup, Commercial Business Group",
       role: "Senior Recon Automation Developer",
       dates: "November 2004 – April 2006",
-      description: [],
+      description: [
+        "Translated business logic into regular and ad-hoc reports using Acrobat and Excel.",
+        "Utilized VBA and Access to prototype new account logic before implementation into the production ReconPlus application.",
+        "Saved hundreds of person-hours by developing a workaround for a complex import process.",
+      ],
     },
   ],
   education: [
