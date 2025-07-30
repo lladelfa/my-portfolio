@@ -42,7 +42,8 @@ export const caseStudies = [
     slug: "finsight-application-optimization",
     title: "FinSight Application Optimization",
     description: "Devised an architectural optimization plan projected to save $2.8M annually and achieve a 164% ROI by simplifying a complex financial application.",
-    tags: ["Cloud Architecture", "DevOps", "Data Architecture", "Python", "AWS"],
+    tags: ["Cloud Architecture", 
+      "DevOps", "Data Architecture", "Python", "React","SQL","Node.js","AWS"],
     href: "/projects/finsight-application-optimization",
     role: "Director, Software Engineering",
     timeline: "Ongoing",
@@ -55,7 +56,7 @@ export const caseStudies = [
     title: "IROD: Investor Relations Application",
     description:
       "Crafted a custom, award-winning web/mobile app to automate quarterly earnings, which was later strategically decommissioned to simplify the ecosystem.",
-    tags: ["React", "D3.js", "Snowflake", "JumpStart Framework", "AWS", "Python","Docker"],
+    tags: ["React", "D3.js", "Snowflake", "JumpStart Framework", "AWS", "Python","Node.js","Docker"],
     href: "/projects/investor-relations-application",
     role: "Senior Manager, Software Engineering",
     timeline: "1 Year",
@@ -104,6 +105,16 @@ export const resumeData = {
   summary:
     "Strategic and technically adept Software Engineering Leader with 20+ years of experience in driving complex cloud architectures, infrastructure automation, and software development initiatives. As an adept engineering director and technical architect, I have consistently delivered dependable, scalable, and cost-effective solutions tailored for extensive corporate environments.",
   experience: [
+    {
+      company: "M & T Bank",
+      role: "Domain Solutions Architect",
+      dates: "October 2024 - Current",
+      description: [
+        "Modernized enterprise applications by architecting and deploying scalable Azure-based solutions, establishing a standardized DevOps pipeline that significantly reduced infrastructure provisioning time while enhancing overall system resiliency and scalability.",
+        "Drove modernization of data lifecycle management across the portfolio, implementing a standardized framework for evaluating and assigning data retention requirements to application datasets. This strategy resulted in the compliant decommissioning of multiple legacy systems and significant reductions in storage costs.",
+        "Facilitated comprehensive Software Architecture Document reviews, contributing to their continuous refinement and improvement. Ensured solution compliance with systems engineering standards, enabling application teams to modernize their systems for enhanced scalability and resilience, directly supporting data center exit strategies.",
+      ],
+    },
     {
       company: "Capital One",
       role: "Director, Software Engineering – Card Loyalty",
