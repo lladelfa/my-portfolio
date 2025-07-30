@@ -51,7 +51,7 @@ export default function ProjectsPage() {
         animate="visible"
       >
         {caseStudies.map((study) => (
-          <motion.div key={study.title} variants={itemVariants}>
+          <motion.div key={study.slug} variants={itemVariants}>
             <Link href={study.href} className="group block h-full">
               <Card className="h-full transition-all group-hover:shadow-lg group-hover:-translate-y-1">
                 <CardHeader>
