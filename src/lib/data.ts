@@ -39,6 +39,18 @@ export const caseStudies = [
       "The new platform provided the business with critical flexibility and future-proofed our servicing solutions.",
   },
   {
+    slug: "finsight-application-optimization",
+    title: "FinSight Application Optimization",
+    description: "Devised an architectural optimization plan projected to save $2.8M annually and achieve a 164% ROI by simplifying a complex financial application.",
+    tags: ["Cloud Architecture", "DevOps", "Data Architecture", "Python", "AWS"],
+    href: "/projects/finsight-application-optimization",
+    role: "Director, Software Engineering",
+    timeline: "Ongoing",
+    problem: "The FinSight application's architecture was overly complex, requiring a large team of 15 engineers to support it, leading to high operational costs.",
+    solution: "I partnered with senior engineers to design a simplified, domain-driven architecture for the application. I successfully communicated this detailed plan and garnered buy-in from product and business partners.",
+    outcome: "This optimization initiative established a new benchmark for how all future software projects are evaluated, leading to more efficient staffing models and streamlined execution methodologies across the organization. The reduction in required engineering support demonstrated a paradigm shift in resource allocation and project management."
+  },
+  {
     slug: "investor-relations-application",
     title: "IROD: Investor Relations Application",
     description:
