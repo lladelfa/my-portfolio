@@ -24,19 +24,19 @@ export const caseStudies = [
   },
   {
     slug: "loyalty-management-platform",
-    title: "Loyalty Management Platform & Security Enhancement",
+    title: "Enterprise Loyalty Platform Modernization",
     description:
-      "Led the design of a real-time benefits management platform and implemented a security fix that eliminated $300k in monthly fraud.",
+      "Led the modernization of a critical, customer-facing loyalty platform to improve scalability, real-time capabilities, and developer velocity.",
     tags: ["AWS", "Java", "Microservices", "API Integration", "DevOps"],
     href: "/projects/loyalty-management-platform",
     role: "Director, Software Engineering",
     timeline: "1 Year",
     problem:
-      "The business needed real-time control over customer benefits.",
+      "The existing loyalty platform was built on legacy technology, making it difficult to scale, slow to release new features, and unable to support real-time benefit management required by the business.",
     solution:
-      "I orchestrated 6 engineering teams to design and implement the Loyalty Management Platform, providing enterprise-scale, real-time benefit management.",
+      "I orchestrated 6 engineering teams to re-architect and modernize the platform on AWS using a microservices-based approach. This involved streamlining complex workflows, establishing a robust CI/CD pipeline, and implementing an event-driven architecture to enable real-time processing.",
     outcome:
-      "The new platform provided the business with critical flexibility and future-proofed our servicing solutions.",
+      "The modernized platform enhanced system resiliency, reduced feature delivery time from months to weeks, and provided the business with critical, real-time control over customer benefits, future-proofing our servicing solutions.",
   },
   {
     slug: "finsight-application-optimization",
