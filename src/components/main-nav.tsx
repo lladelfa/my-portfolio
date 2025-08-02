@@ -7,6 +7,8 @@ import {
   Sheet,
   SheetClose,
   SheetContent,
+  SheetHeader,
+  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Separator } from "@/components/ui/separator";
@@ -53,6 +55,9 @@ export function MainNav() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right">
+                <SheetHeader>
+                  <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
+                </SheetHeader>
                 <nav className="mt-8 grid gap-6 text-lg font-medium">
                   <SheetClose asChild>
                     <Link href="/projects">Projects</Link>
