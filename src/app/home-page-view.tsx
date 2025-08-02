@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export function HomePageView() {
   return (
-    <section className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center">
+    <section className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center pt-36 md:pt-44">
       {/* Abstract Background Banner */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-20 dark:opacity-30"
