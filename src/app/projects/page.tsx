@@ -2,6 +2,7 @@
 
 import {
   Card,
+  CardFooter,
   CardContent,
   CardDescription,
   CardHeader,
@@ -32,7 +33,7 @@ const itemVariants = {
 
 export default function ProjectsPage() {
   return (
-    <main className="container mx-auto px-4 py-12 md:py-16">
+    <main className="container mx-auto px-4 pt-28 pb-12 md:pt-32 md:pb-16">
       <div className="space-y-4 text-center">
         <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
           My Work & Case Studies
@@ -53,12 +54,13 @@ export default function ProjectsPage() {
         {caseStudies.map((study) => (
           <motion.div key={study.slug} variants={itemVariants}>
             <Link href={study.href} className="group block h-full">
-              <Card className="h-full transition-all group-hover:shadow-lg group-hover:-translate-y-1">
+              <Card className="flex h-full flex-col transition-all group-hover:shadow-lg group-hover:-translate-y-1">
                 <CardHeader>
                   <CardTitle>{study.title}</CardTitle>
                   <CardDescription>{study.description}</CardDescription>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="flex-grow" />
+                <CardFooter>
                   <div className="flex flex-wrap gap-2">
                     {study.tags.map((tag) => (
                       <Badge key={tag} variant="secondary">
@@ -66,7 +68,7 @@ export default function ProjectsPage() {
                       </Badge>
                     ))}
                   </div>
-                </CardContent>
+                </CardFooter>
               </Card>
             </Link>
           </motion.div>
