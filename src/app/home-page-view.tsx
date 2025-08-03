@@ -5,9 +5,23 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
+const textContainerVariants = {
+  hidden: { opacity: 0, x: -50 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.8 },
+  },
+};
+
+const imageVariants = {
+  hidden: { opacity: 0, scale: 0.8 },
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.8, delay: 0.2 } },
+};
+
 export function HomePageView() {
   return (
-    <section className="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center">
+    <section className="relative w-full flex items-center justify-center pt-36 pb-24 md:pt-44">
       {/* Abstract Background Banner */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-20 dark:opacity-30"
@@ -23,9 +37,9 @@ export function HomePageView() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div
             className="flex flex-col items-center md:items-start text-center md:text-left"
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            variants={textContainerVariants}
+            initial="hidden"
+            animate="visible"
           >
             <h1 className="text-4xl font-bold tracking-tight md:text-6xl">
               Lorenzo LaDelfa
@@ -52,9 +66,9 @@ export function HomePageView() {
           </motion.div>
           <motion.div
             className="flex items-center justify-center"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            variants={imageVariants}
+            initial="hidden"
+            animate="visible"
           >
             <Image
               src="/profile.png"
