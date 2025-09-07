@@ -23,6 +23,22 @@ export const caseStudies = [
       "The result is a fully-featured, statically-generated portfolio site deployed on Vercel. It features a dynamic case study system, a polished and responsive UI, and a professional deployment pipeline. This project itself serves as a testament to modern web development practices.",
   },
   {
+    slug: "espn-fantasy-football-utilities",
+    title: "ESPN Fantasy Football Utilities",
+    description:
+      "A collection of Python scripts designed to pull and analyze data from a private ESPN fantasy football league using the unofficial ESPN API.",
+    tags: ["Python", "API Integration"],
+    href: "/projects/espn-fantasy-football-utilities",
+    role: "Full-Stack Developer",
+    timeline: "Ongoing",
+    problem:
+      "Manual tracking of keeper selections and their original draft costs in a private ESPN fantasy football league was inefficient and prone to errors.",
+    solution:
+      "Developed a suite of Python scripts, including a primary script, get_keepers.py, to automate the process of fetching and analyzing keeper data using the unofficial ESPN API.",
+    outcome:
+      "Provided a comprehensive, consolidated pre-draft overview for league members, eliminating the need for manual data lookup and improving the accuracy of keeper assignments.",
+  },
+  {
     slug: "loyalty-management-platform",
     title: "Enterprise Loyalty Platform Modernization",
     description:
